@@ -1,0 +1,4 @@
+export const roles={OWNER:{label:'Owner',description:'Full workspace control'},MANAGER:{label:'Manager',description:'Manage and approve assigned work'},WORKER:{label:'Worker',description:'Work on assigned tasks'}};
+export const workflow=['Worker','Manager','Finished','Posted'];
+export const permissions={OWNER:['view_dashboard','manage_tasks','assign_tasks','approve_tasks','manage_team','manage_roles','manage_settings','view_reports'],MANAGER:['view_dashboard','manage_tasks','assign_tasks','approve_tasks','view_team'],WORKER:['view_dashboard','view_assigned_tasks','update_assigned_tasks','submit_finished_work']};
+export const sampleTasks=[{id:1,title:'Prepare weekly content plan',assignee:'Worker',status:'Manager',priority:'High'},{id:2,title:'Review campaign assets',assignee:'Worker',status:'Worker',priority:'Medium'},{id:3,title:'Publish approved package',assignee:'Manager',status:'Posted',priority:'Low'}];
